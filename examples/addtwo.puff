@@ -1,0 +1,8 @@
+;; (define function addTwo '(uint256 uint256) 'view '(uint256))
+
+(defmacro MAIN [0 0]
+  (0x00 calldataload
+   0x20 calldataload
+   add
+   0x00 mstore
+   0x20 0x00 return))
